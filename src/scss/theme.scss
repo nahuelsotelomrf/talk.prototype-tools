@@ -1,0 +1,19 @@
+/* ----------------------------------------------------------------------------
+   *** THEME ***
+---------------------------------------------------------------------------- */
+// Default theme
+// --------------------------------------------------------
+@import 'theme/source/beige';
+// @import 'theme/custom';
+
+// Theme customization
+// --------------------------------------------------------
+@import 'custom/variables';
+@import 'custom/base';
+@import 'custom/extend-theme';
+@import 'custom/slides-custom';
+@import 'custom/demo';
+
+// Syntax highlighting
+// --------------------------------------------------------
+@import 'extras/zenburn';

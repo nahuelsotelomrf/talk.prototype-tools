@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $c-red;
+  background: #fff;
+}
+
+#no-reveal,
+#no-reveal body {
+  height: auto;
+  overflow: visible;
+}
+
+.Page-wrap {
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 50rem;
+}
+
+.cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

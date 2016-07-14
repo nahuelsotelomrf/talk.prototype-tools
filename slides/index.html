@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+
+    <title>Gulp Fiction</title>
+
+    <meta name="description" content="Talk about task runners">
+    <meta name="author" content="Nahuel Sotelo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Roboto+Slab:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1 class="t-hero fz-l">Gulp Fiction</h1>
+      </section>
+
+      <section id="framer" class="">
+  <section>
+    <h2>Framer</h2>
+  </section>
+  
+  <section>
+      <h3>Features</h3>
+  </section>
+  
+  <section>
+      <h3>Pros</h3>
+      <ul class="fz-m">
+        <li>Permite animaciones e interactividad compleja</li>
+        <li>Al ser código, permite iterar rápido.</li>
+        <li>Trabaja bien con Sketch</li>
+        <li>Ampliable con plugins</li>
+        <li>Buena documentación y comunidad</li>
+        <li>Permite reaprovechar código (hasta cierto punto)</li>
+        <li>Es javascipt</li>
+      </ul>
+  </section>
+
+  <section>
+      <h3>Contras</h3>
+      <ul class="fz-m">
+        <li>Un poco lento hasta que se le coge la mano.</li>
+        <li>Curva de aprendizaje medio-alta.</li>
+        <li>Es coffescript</li>
+      </ul>
+  </section>
+
+    <section>
+      <h3>¿Para qúe nos puede servir?</h3>
+      <ul class="fz-m">
+        <li>Prototipos con cierta complejidad en interacción</li>
+        <li>Se pueden crear flujos de navegación si se combina con <a href="https://github.com/awt2542/ViewController-for-Framer">View Controller</a></li>
+      </ul>
+  </section>  
+</section>
+
+
+
+    </div>
+  </div>
+
+  <script src="js/reveal/head.min.js"></script>
+<script src="js/reveal/reveal.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: 'js/reveal/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'js/reveal/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'js/reveal/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'js/reveal/notes/notes.js', async: true }
+    ]
+  });
+</script>
+
+
+</body>
+</html>

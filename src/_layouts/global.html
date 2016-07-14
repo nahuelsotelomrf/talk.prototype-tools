@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1 class="t-hero fz-l">{{ page.lesson_title }}</h1>
+      </section>
+
+      {{ content }}
+
+    </div>
+  </div>
+
+  {% include scripts-footer.html %}
+
+</body>
+</html>
